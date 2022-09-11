@@ -1,6 +1,5 @@
 import os
 import time
-import pytz
 import csv
 from dotenv import load_dotenv
 from datetime import datetime, timedelta 
