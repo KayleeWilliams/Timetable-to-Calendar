@@ -56,8 +56,7 @@ def main():
         pass
 
     schedule = []
-    days = ["Monday", "Tuesday", "Wednesday",
-            "Thursday", "Friday", "Saturday", "Sunday"]
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
     wait.until(EC.presence_of_element_located(
         (By.XPATH, '//*[@id="portlet_u47210l1n1121"]/div[2]')))
@@ -96,7 +95,11 @@ def main():
 
                 # Get the correct date
                 previous = trs[i-1].find_elements(By.TAG_NAME, "td")[0].text
-                if (tds[0].text != previous) and (i != 1):
+                
+                if i == 1:
+                    previous = 'Monday'
+
+                if (tds[0].text != previous) and (i != 0):
                     diff = days.index(tds[0].text) - days.index(previous)
                     date += timedelta(days=diff)
 
