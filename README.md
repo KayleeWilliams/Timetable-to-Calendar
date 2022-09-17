@@ -1,5 +1,5 @@
 # Timetable to Calendar
-A Python application that utilises Selenium & Google Calendar's API to log in and scrape my UWE timetable and display it on Google Calendar as well as other services e.g. Apple's Calendar. 
+A Python application that utilises Selenium & Google Calendar's API to log in and scrape my university timetable and display it on Google Calendar as well as other services e.g. Apple's Calendar. 
 
 ## Demo
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/WXeFmFgpb64/0.jpg)](http://www.youtube.com/watch?v=WXeFmFgpb64 "Demo")
